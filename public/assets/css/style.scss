@@ -1,0 +1,71 @@
+// Fonts
+$font-sans: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif; 
+$font-title: "Germania One", Georgia, "Times New Roman", serif;
+
+// Colors
+$color-primary: #FF6447; // tomato
+$color-primary-dark: darken($color-primary, 25%);
+$color-secondary: #31849F; // blue
+$color-dark: #333;
+
+
+// Global
+body {
+	color: $color-dark;
+	font-family: $font-sans;
+	font-size: 14px;
+	line-height: 1.2;
+}
+
+a {
+	color: $color-primary-dark;
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 1200px;
+	width: 100%;
+}
+
+// Header
+.site-title {
+	border-bottom: 5px dashed $color-primary;
+	display: inline-block;
+	font-family: $font-title;
+	font-size: 50px;
+	letter-spacing: 3px;
+	margin: 40px 0;
+}
+
+// Content - Index
+.list-companies {
+	list-style: none;
+	margin: 0 0 100px;
+	padding: 0;
+
+	li {
+		margin: 0 0 40px;
+		padding: 0;
+	}
+}
+
+.app-company {
+	font-size: 18px;
+	margin-bottom: 5px;
+}
+
+.app-position,
+.app-date-applied,
+.app-status {
+	display: block;
+	margin-bottom: 5px;
+}
+
+
+
+

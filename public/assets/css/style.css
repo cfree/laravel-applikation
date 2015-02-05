@@ -1,0 +1,42 @@
+body {
+  color: #333;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.2; }
+
+a {
+  color: #c61f00;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%; }
+
+.site-title {
+  border-bottom: 5px dashed #FF6447;
+  display: inline-block;
+  font-family: "Germania One", Georgia, "Times New Roman", serif;
+  font-size: 50px;
+  letter-spacing: 3px;
+  margin: 40px 0; }
+
+.list-companies {
+  list-style: none;
+  margin: 0 0 100px;
+  padding: 0; }
+  .list-companies li {
+    margin: 0 0 40px;
+    padding: 0; }
+
+.app-company {
+  font-size: 18px;
+  margin-bottom: 5px; }
+
+.app-position,
+.app-date-applied,
+.app-status {
+  display: block;
+  margin-bottom: 5px; }
