@@ -1,6 +1,6 @@
 ## Applikation
 
-For those looking to keep track of their applications.
+For those looking to keep track of their job applications.
 
 This app is a response to the Louisville Laravel Meetup's Interview Scheduler demo app. 
 
