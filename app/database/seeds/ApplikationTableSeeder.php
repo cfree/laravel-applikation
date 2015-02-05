@@ -66,7 +66,7 @@ class ApplikationTableSeeder extends Seeder {
 		));
 
 		$co7 = Company::create(array(
-			'name' => 'VOLTAGE',
+			'name' => 'AirAsia',
 		));
 
 		$co8 = Company::create(array(
@@ -124,9 +124,9 @@ class ApplikationTableSeeder extends Seeder {
 		$co8->names()->save($application);
 
 		$application = Application::create(array(
-			'position' => 'Back-end Developer',
+			'position' => 'Gate Agent',
 			'date_applied' => date("Y-m-d H:i:s"),
-			'source_url' => 'http://voltagead.com',
+			'source_url' => 'http://monster.com',
 		));
 		$status2->statuses()->save($application);
 		$co7->names()->save($application);
