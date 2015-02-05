@@ -137,7 +137,7 @@ class ApplikationTableSeeder extends Seeder {
 			'source_url' => 'http://glassdoor.com',
 		));
 		$status4->statuses()->save($application);
-		$co7->names()->save($application);
+		$co8->names()->save($application);
 
 		$application = Application::create(array(
 			'position' => 'Air Marshal',
