@@ -18,6 +18,8 @@ class CreateApplicationsTable extends Migration {
 			$table->datetime('date_applied');
 			$table->integer('status_id')->unsigned();
 			$table->string('source_url');
+
+			$table->timestamps();
 		});
 	}
 

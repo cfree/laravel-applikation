@@ -1,6 +1,6 @@
 <?php
 
-class AppSeeder extends Seeder {
+class ApplikationTableSeeder extends Seeder {
 	public function run() {
 		// Empty tables first
 		DB::table('applications')->delete();
@@ -8,35 +8,35 @@ class AppSeeder extends Seeder {
 		DB::table('statuses')->delete();
 
 		// Add statuses
-		$status1 = Company::create(array(
+		$status1 = Status::create(array(
 			'status' => 'Awaiting Response',
 		));
 		
-		$status2 = Company::create(array(
+		$status2 = Status::create(array(
 			'status' => 'Interview Scheduled',
 		));
 		
-		$status3 = Company::create(array(
+		$status3 = Status::create(array(
 			'status' => 'Post Interview',
 		));
 
-		$status4 = Company::create(array(
+		$status4 = Status::create(array(
 			'status' => 'Awaiting Decision',
 		));
 
-		$status5 = Company::create(array(
+		$status5 = Status::create(array(
 			'status' => 'Denied',
 		));
 
-		$status6 = Company::create(array(
+		$status6 = Status::create(array(
 			'status' => 'No Response',
 		));
 
-		$status7 = Company::create(array(
+		$status7 = Status::create(array(
 			'status' => 'Position Filled',
 		));
 
-		$status8 = Company::create(array(
+		$status8 = Status::create(array(
 			'status' => 'Need to Apply',
 		));
 
@@ -66,7 +66,7 @@ class AppSeeder extends Seeder {
 		));
 
 		$co7 = Company::create(array(
-			'name' => 'Continental',
+			'name' => 'VOLTAGE',
 		));
 
 		$co8 = Company::create(array(
@@ -74,96 +74,85 @@ class AppSeeder extends Seeder {
 		));
 
 		// Add some applications
-		$application = Application::create(array( // 1
-			'company_id' => 1, 
+		$application = Application::create(array(
 			'position' => 'First Officer',
 			'date_applied' => date("Y-m-d H:i:s"),
-			'status_id' => 8,
 			'source_url' => 'http://dice.com',
 		));
-		$day1->timeslots()->save($timeslot);
+		$status8->statuses()->save($application);
+		$co1->names()->save($application);
 
-		$application = Application::create(array( // 2
-			'company_id' => 2, 
+		$application = Application::create(array(
 			'position' => 'Captain',
 			'date_applied' => date("Y-m-d H:i:s"),
-			'status_id' => 4,
 			'source_url' => 'http://monster.com',
 		));
-		$day1->timeslots()->save($timeslot);
+		$status4->statuses()->save($application);
+		$co2->names()->save($application);
 
-		$application = Application::create(array( // 3
-			'company_id' => 3, 
+		$application = Application::create(array(
 			'position' => 'Captain',
 			'date_applied' => date("Y-m-d H:i:s"),
-			'status_id' => 4,
 			'source_url' => 'http://indeed.com',
 		));
-		$day1->timeslots()->save($timeslot);
+		$status4->statuses()->save($application);
+		$co3->names()->save($application);
 
-		$application = Application::create(array( // 2
-			'company_id' => 2, 
+		$application = Application::create(array(
 			'position' => 'Flight Attendant',
 			'date_applied' => date("Y-m-d H:i:s"),
-			'status_id' => 4,
 			'source_url' => 'http://dice.com',
 		));
-		$day1->timeslots()->save($timeslot);
+		$status4->statuses()->save($application);
+		$co2->names()->save($application);
 
-		$application = Application::create(array( // 4
-			'company_id' => 4, 
+		$application = Application::create(array(
 			'position' => 'Lead Flight Attendant',
 			'date_applied' => date("Y-m-d H:i:s"),
-			'status_id' => 5,
 			'source_url' => 'http://careerbuilder.com',
 		));
-		$day1->timeslots()->save($timeslot);
+		$status5->statuses()->save($application);
+		$co4->names()->save($application);
 
 
-		$application = Application::create(array( // 8
-			'company_id' => 8, 
+		$application = Application::create(array(
 			'position' => 'Captain',
 			'date_applied' => date("Y-m-d H:i:s"),
-			'status_id' => 5,
 			'source_url' => 'http://craigslist.com',
 		));
-		$day2->timeslots()->save($timeslot);
+		$status5->statuses()->save($application);
+		$co8->names()->save($application);
 
-		$application = Application::create(array( // 7
-			'company_id' => 7, 
+		$application = Application::create(array(
 			'position' => 'Back-end Developer',
 			'date_applied' => date("Y-m-d H:i:s"),
-			'status_id' => 2,
 			'source_url' => 'http://voltagead.com',
 		));
-		$day2->timeslots()->save($timeslot);
+		$status2->statuses()->save($application);
+		$co7->names()->save($application);
 
-		$application = Application::create(array( // 7
-			'company_id' => 7, 
+		$application = Application::create(array(
 			'position' => 'Flight Engineer',
 			'date_applied' => date("Y-m-d H:i:s"),
-			'status_id' => 4,
 			'source_url' => 'http://glassdoor.com',
 		));
-		$day2->timeslots()->save($timeslot);
+		$status4->statuses()->save($application);
+		$co7->names()->save($application);
 
-
-		$application = Application::create(array( // 6
-			'company_id' => 6, 
+		$application = Application::create(array(
 			'position' => 'Air Marshal',
 			'date_applied' => date("Y-m-d H:i:s"),
-			'status_id' => 6,
 			'source_url' => 'https://www.usajobs.gov',
 		));
-		$day3->timeslots()->save($timeslot);
+		$status6->statuses()->save($application);
+		$co6->names()->save($application);
 
-		$application = Application::create(array( // 5
-			'company_id' => 5, 
+		$application = Application::create(array(
 			'position' => 'Stewardess',
 			'date_applied' => date("Y-m-d H:i:s"),
-			'status_id' => 7,
 			'source_url' => 'http://denverhelpwanted.com',
 		));
-		$day3->timeslots()->save($timeslot);
+		$status7->statuses()->save($application);
+		$co5->names()->save($application);
 	}
 }
