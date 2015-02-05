@@ -3,7 +3,7 @@
 class Company extends Eloquent {
 	
 	public function names() {
-		return $this->hasOne('Application');
+		return $this->hasMany('Application');
 	}
 
 }
