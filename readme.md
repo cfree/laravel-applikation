@@ -2,7 +2,7 @@
 
 For those looking to keep track of their job applications.
 
-This app is a response to the Louisville Laravel Meetup's Interview Scheduler demo app. 
+This app is a response to the Louisville [Laravel Meetup](meetup.com/Louisville-Laravel-Meetup/)'s [Interview Scheduler demo app](github.com/voltagead/interviewscheduler). 
 
 ### Installation
 1. Clone the project to the desired directory
