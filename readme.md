@@ -14,5 +14,5 @@ This app is a response to the Louisville [Laravel Meetup](meetup.com/Louisville-
 7. Enjoy!
 
 ### Wishlist
-- Complete CRUD operations
-- Authentication
+- Complete CRUD operations via Laravel
+- Single-page application via AngularJS
